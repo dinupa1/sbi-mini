@@ -28,8 +28,7 @@ from methods import UnfoldingNetwork, UnfoldingDataset, UnfoldingLoss, Unfolding
 plt.style.use([hep.style.ROOT, hep.style.firamath])
 
 
-# dvc = "cuda" if torch.cuda.is_available() else "cpu"
-dvc = "cpu"
+dvc = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using {dvc} device")
 
 pi = np.pi
